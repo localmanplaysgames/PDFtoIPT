@@ -1,2 +1,4 @@
 camelot-py
 pandas
+ghostscript
+pypdf
