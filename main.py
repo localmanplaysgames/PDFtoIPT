@@ -86,16 +86,21 @@ def extract_tables(pdf, range):
 
 def main():
 
-    pdf_path = user_file_selection() 
+    pdf_path = "./dev_resources/source.pdf" #user_file_selection() <---------------------------------- CHANGED FOR TESTING
     print(f"Running against pdf: {pdf_path}...")
 
-    user_selection = user_page_selection(total_pages(pdf_path))
-    print(f"Scanning pages {user_selection[0]} to {user_selection[1]} for tables...")
+    while True:
+        user_selection = 6, 6 #user_page_selection(total_pages(pdf_path)) <---------------------------------- CHANGED FOR TESTING
+        print(f"Scanning pages {user_selection[0]} to {user_selection[1]} for tables...")
 
-    tables = extract_tables(pdf_path, page_range(user_selection[0], user_selection[1]))
-    print(f"{tables.n} tables found") ## reprompt for new page range if nil
-    #print(f"Example of first table:") 
-    #print(tables[0].df)
+        tables = extract_tables(pdf_path, page_range(user_selection[0], user_selection[1]))
+        if tables.n == 0:
+            print(f"{tables.n} tables found. Returning to page select.")
+        else:    
+            print(f"{tables.n} tables found") ## reprompt for new page range if nil
+            print(f"Example of first table:") 
+            print(tables[0].df)
+            break
 
 if __name__ == __name__:
     main()
