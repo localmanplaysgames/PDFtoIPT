@@ -1,0 +1,69 @@
+Table: Application Method
+Type: Lookup
+roll: 1d10
+1: Eye drops
+2: Inhaled
+3: Injected
+4: Injury
+5: Nasal
+6: Skin Contact
+7: With food
+8: With Liquids
+9: Spray
+10: Vaporised/Gas
+EndTable
+
+Table: Container
+Type: Lookup
+roll: 1d10
+1: Bladder
+2: Bottle
+3: Capsule
+4: Ceramic Jar
+5: Flask
+6: Glass Tube
+7: Jewellery
+8: Lined box
+9: Small hand-held item
+10: Vial
+EndTable
+
+Table: Base form
+Type: Lookup
+roll: 1d10
+1: Crystals - large
+2: Crystals - small
+3: Gas - Fine/light
+4: Gas - thick/heavy
+5: Gel/paste - lumpy
+6: Gel/Paste - smooth
+7: Liquid - thick
+8: Liquid - thin
+9: Powder - coarse
+10: Powder - fine
+EndTable
+
+Table: Colouration
+Type: Lookup
+roll: 1d20
+1: Black
+2: Blue
+3: Bronze
+4: Brown
+5: Dark Blue
+6: Dark Green
+7: Gold
+8: Green
+9: Grey
+10: Light Blue
+11: Light Green
+12: Orange
+13: Pink
+14: Purple
+15: Red
+16: Silvery
+17: Transparent/Clear
+18: White
+19: Yellow
+20: Multiple - Roll twice
+EndTable

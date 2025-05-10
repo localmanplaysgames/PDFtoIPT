@@ -84,6 +84,14 @@ def page_range(start, end):
 def extract_tables(pdf, range):
     return camelot.read_pdf(pdf, pages=range, flavor="lattice")
 
+def tbl_to_ipt(table, file):
+    file.write(f"Table: {table.iloc[0,1]}\n")
+    file.write(f"Type: Lookup\n")
+    file.write(f"Roll: 1{(table.iloc[0,0])}\n")
+    for i in range(1, table.shape[0]):
+        file.write(f"{table.iloc[i,0]}: {table.iloc[i,1]}\n")
+    file.write("EndTable\n\n")
+
 def main():
 
     pdf_path = "./dev_resources/source.pdf" #user_file_selection() <---------------------------------- CHANGED FOR TESTING
@@ -101,6 +109,14 @@ def main():
             print(f"Example of first table:") 
             print(tables[0].df)
             break
+
+    file_name = "testfile.ipt"
+
+    print(f"Exporting tables to {file_name}")
+
+    with open(file_name, "w", encoding="utf-8") as f:
+        for t in range(0, tables.n):
+            tbl_to_ipt(tables[t].df, f)
 
 if __name__ == __name__:
     main()
