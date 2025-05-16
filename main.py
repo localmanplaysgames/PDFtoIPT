@@ -87,7 +87,7 @@ def extract_tables(pdf, range):
 def tbl_to_ipt(table, file):
     file.write(f"Table: {table.iloc[0,1]}\n")
     file.write(f"Type: Lookup\n")
-    file.write(f"Roll: 1{(table.iloc[0,0])}\n")
+    file.write(f"Roll: 1{table.iloc[0,0].lower()}\n")
     for i in range(1, table.shape[0]):
         file.write(f"{table.iloc[i,0]}: {table.iloc[i,1]}\n")
     file.write("EndTable\n\n")
@@ -98,7 +98,7 @@ def main():
     print(f"Running against pdf: {pdf_path}...")
 
     while True:
-        user_selection = 6, 6 #user_page_selection(total_pages(pdf_path)) <---------------------------------- CHANGED FOR TESTING
+        user_selection = user_page_selection(total_pages(pdf_path))
         print(f"Scanning pages {user_selection[0]} to {user_selection[1]} for tables...")
 
         tables = extract_tables(pdf_path, page_range(user_selection[0], user_selection[1]))

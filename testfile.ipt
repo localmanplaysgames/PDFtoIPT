@@ -1,6 +1,27 @@
+Table: Roll
+Type: Lookup
+Roll: 1aspect
+Application 
+Method: 5
+Colouration: 9
+Container: 2
+Form: 8
+Preparation: 10
+Rating: 30
+Time 
+Period: 1
+Main 
+Ingredient: 7
+Name (p): 4
+Name (s): 55
+Smell: 2
+Taste: 87
+Effect: 21
+EndTable
+
 Table: Application Method
 Type: Lookup
-roll: 1d10
+Roll: 1d10
 1: Eye drops
 2: Inhaled
 3: Injected
@@ -15,7 +36,7 @@ EndTable
 
 Table: Container
 Type: Lookup
-roll: 1d10
+Roll: 1d10
 1: Bladder
 2: Bottle
 3: Capsule
@@ -30,7 +51,7 @@ EndTable
 
 Table: Base form
 Type: Lookup
-roll: 1d10
+Roll: 1d10
 1: Crystals - large
 2: Crystals - small
 3: Gas - Fine/light
@@ -45,7 +66,7 @@ EndTable
 
 Table: Colouration
 Type: Lookup
-roll: 1d20
+Roll: 1d20
 1: Black
 2: Blue
 3: Bronze
@@ -67,3 +88,630 @@ roll: 1d20
 19: Yellow
 20: Multiple - Roll twice
 EndTable
+
+Table: Rating
+Type: Lookup
+Roll: 1d100
+01: 5
+02 - 03: 10
+04 - 06: 15
+07 - 10: 20
+11 – 15: 25
+16 - 20: 30
+21 - 25: 35
+26 - 30: 40
+31 - 35: 45
+36 - 45: 50
+46 - 55: 55
+56 - 65: 60
+65 - 75: 65
+76 - 80: 70
+81 - 85: 75
+86 - 90: 80
+91 - 94: 85
+95 - 97: 90
+98 - 99: 95
+00: 100
+EndTable
+
+Table: Preparation
+Type: Lookup
+Roll: 1d20
+1: Boiled - quick
+2: Boiled - slow
+3: Burning/Exposed to 
+flame
+4: Cooled
+5: Diluted then filtered
+6: Diluted with water
+7: Exposed to air
+8: Fermented
+9: Final Ingredient added 
+(roll on MI table)
+10: Heated
+11: Mixed with acid
+12: Mixed with alcohol
+13: Mixed with any liquid
+14: Mixed with any liquid 
+then dried
+15: Mixed with hair/skin 
+from the target
+16: Mixed with targets blood
+17: Mixed with targets salvia
+18: Mixed with water then 
+dried
+19: None - Can be used as it 
+is
+20: Two component parts 
+mixed
+EndTable
+
+Table: Time Period
+Type: Lookup
+Roll: 1d20
+1 - 2: 1 hour
+3: 10d10 mins
+4: 10d10 seconds
+5: 12 hours
+6: 1d10 days
+7: 1d10 hours
+8: 1d10 seconds
+9: 1d4 months
+10: 1d4 weeks
+11: 2 weeks
+12: 24 hours
+13: 2d10 Hours
+14: 3d10 days
+15: 3d10 hours
+16: 6 hours
+17: Permanent (until cured)
+18: Until the next full moon
+19: Until the next sunrise
+20: Until the next sunset
+EndTable
+
+Table: Humanoid Skin
+Type: Lookup
+Roll: 151
+52: Insect Parts
+53: Lead flakes
+54: Mandrake root
+55: Mercury
+56: Milk
+57: Milk (sour/gone off)
+58: Misc. Chemicals
+59: Moss
+60: Newt Eye
+61: Nightshade
+62: Organ - Animal
+63: Organ - Humanoid
+64: Organ - Monster
+65: Paprika
+66: Peanuts
+67: Pepper
+68: Pollen
+69: Poppy
+70: Powdered Metal
+71: Pure Water
+72: Salt
+73: Sap
+74: Shellfish
+75: Soy
+76: Spinal Fluid - Animal
+77: Spinal Fluid - Humanoid
+78: Spinal Fluid - Monster
+79: Spores
+80: Sunflower Seeds
+81: Sweat - Humanoids
+82: Sweat - Target
+83: Toad - Mucus
+84: Toad - Skin
+85: Tobacco
+86: Tomb dust
+87: Tortoise Shell
+88: Urine - Animal
+89: Urine - Humanoid
+90: Urine - Monster
+91: Urine - Target
+92: Venom - Centipede
+93: Venom - Other
+94: Venom - Scorpion
+95: Venom - Snake
+96: Water - Stagnant
+97: Wheat
+98: Whiskers
+99: Wormwood
+100: Yoghurt
+EndTable
+
+Table: Main Ingredients
+Type: Lookup
+Roll: 1d100
+1: Acid
+2: Algae
+3: Amniotic Fluid
+4: Animal Fur
+5: Animal horn
+6: Animal Poop
+7: Arsenic
+8: Belladonna
+9: Bile - Animal
+10: Bile - Humanoid
+11: Bile - Monster
+12: Bleach
+13: Blood - Animal
+14: Blood - Humanoid
+15: Blood - Monster
+16: Blood - Target
+17: Cheese Curd
+18: Cinnamon
+19: Coffee
+20: Crushed Flowers
+21: Dandelion
+22: Datura
+23: Delphinium
+24: Egg
+25: Ergot
+26: Ethanol
+27: Failed/Ruined Potions
+28: Fat - Animal
+29: Fat - Humanoid
+30: Fat - Monster
+31: Fish
+32: Flesh - Animal
+33: Flesh - Humanoid
+34: Flesh - Monster
+35: Flowers - Rare/Exotic
+36: Foxglove
+37: Fruit Juice - Fermented
+38: Fruit Juice - Regular
+39: Fungus
+40: Garlic
+41: Ginger
+42: Gland - Animal
+43: Gland - Humanoid
+44: Gland - Monster
+45: Ground Bone - Animal
+46: Ground Bone - Humanoid
+47: Ground Bone - Monster
+48: Ground Teeth
+49: Hair (target)
+50: Hemlock
+EndTable
+
+Table: Last
+Type: Lookup
+Roll: 151
+52: Legionary
+53: Lord
+54: Luminous
+55: Mages
+56: Manic
+57: Mariner
+58: Medusa
+59: Mind
+60: Moon
+61: Mortal
+62: Necromancer’s
+63: Northern
+64: Ogres
+65: Orange
+66: Pigs
+67: Purple
+68: Pygmy
+69: Queen
+70: Quivering
+71: Red
+72: Sand
+73: Sanguine
+74: Savage
+75: Serpent
+76: Shadow
+77: Sinister
+78: Southern
+79: Spring
+80: Star
+81: Stirge
+82: Strangling
+83: Summer
+84: Terminal
+85: Tomb
+86: Trembling
+87: Troll
+88: Twilight
+89: Vampires
+90: Veiled
+91: Viper
+92: Vortex
+93: Western
+94: White
+95: Wicked
+96: Winter
+97: Wizards
+98: Wraith
+99: Wyvern
+100: Yellow
+EndTable
+
+Table: Prefix
+Type: Lookup
+Roll: 1d100
+1: Alchemists
+2: Angelic
+3: Assassins
+4: Astral
+5: Autumn
+6: Beautiful
+7: Black
+8: Bloating
+9: Blue
+10: Broken
+11: Brown
+12: Cockatrice
+13: Creeping
+14: Crypt
+15: Crystal
+16: Dark
+17: Deadly
+18: Deaths
+19: Demon
+20: Desert
+21: Dire
+22: Dragon
+23: Dream
+24: Dwarven
+25: Eastern
+26: Elven
+27: Envoker’s
+28: Eternal
+29: Ethereal
+30: Faerie
+31: Fates
+32: Fool
+33: Forlorn
+34: Frost
+35: Gaia’s
+36: Gentle
+37: Gloom
+38: Gnomish
+39: Goblin
+40: Great
+41: Green
+42: Hags
+43: Hails
+44: Harpy
+45: Illuminated
+46: Imperial
+47: Infinite
+48: Kind
+49: King
+50: Ladies
+EndTable
+
+Table: Misery
+Type: Lookup
+Roll: 154
+55: Mist
+56: Nap
+57: Nectar
+58: Night
+59: Nightmare
+60: Noon
+61: Oath
+62: Oil
+63: Pain
+64: Piss
+65: Poison
+66: Powder
+67: Rancour
+68: Resilience
+69: Revenge
+70: Root
+71: Salt
+72: Sap
+73: Scale
+74: Seed
+75: Sleep
+76: Smile
+77: Smoke
+78: Snow
+79: Solvent
+80: Special
+81: Spice
+82: Spike
+83: Spit
+84: Spore
+85: Stalk
+86: Sunset
+87: Taint
+88: Tear
+89: Terror
+90: Thorn
+91: Tincture
+92: Torment
+93: Touch
+94: Toxin
+95: Ultimatum
+96: Vein
+97: Water
+98: Weed
+99: Wiff
+100: Wish
+EndTable
+
+Table: Suffix
+Type: Lookup
+Roll: 1d100
+1: Acid
+2: Bane
+3: Blade
+4: Blessing
+5: Blight
+6: Blood
+7: Breaker
+8: Breath
+9: Breath
+10: Bringer
+11: Caress
+12: Compound
+13: Curse
+14: Darkness
+15: Dawn
+16: Day
+17: Death
+18: Delusion
+19: Desire
+20: Destiny
+21: Destruction
+22: Doom
+23: Draught
+24: Dream
+25: Drink
+26: Dust
+27: Ecstasy
+28: Embrace
+29: End
+30: Fancy
+31: Fate
+32: Fire
+33: Flower
+34: Folly
+35: Fungus
+36: Gambit
+37: Gas
+38: Gash
+39: Gate
+40: Grudge
+41: Heaven
+42: Hell
+43: Impulse
+44: Incense
+45: Itch
+46: Jelly
+47: Juice
+48: Kiss
+49: Lament
+50: Leaf
+51: Lights
+52: Midnight
+53: Milk
+EndTable
+
+Table: Lilacs
+Type: Lookup
+Roll: 151
+52: Liquorice
+53: Maple syrup
+54: Mildew
+55: Mint
+56: Mouldy-wet swamp
+57: Musk
+58: None/no smell
+59: Old latrine
+60: Onions
+61: Ozone
+62: Peanut butter
+63: Peeling an orange
+64: Peppermint
+65: Pipe smoke
+66: Rancid ocean beach
+67: Resin
+68: Roast meat
+69: Roses
+70: Rotting Flesh
+71: Rotting fruit
+72: Salty
+73: Sandalwood
+74: Sassafras
+75: Skunk
+76: Slightly bad raw meat
+77: Smoky BBQ
+78: Smoky lamp oil
+79: Soap
+80: Sour milk
+81: Sour old sweat
+82: Spearmint
+83: Stale alcohol
+84: Steam tent
+85: Stewing fruit
+86: Strong alcohol
+87: Sugar
+88: Sweaty naked people
+89: Tinned pipe leaf
+90: Tomato plant
+91: Urine
+92: Veggie soup
+93: Veggies roasting
+94: Vinegar
+95: Vomit
+96: Wet dog
+97: Wet dog
+98: Wet wool
+99: Wildflowers
+100: Yeast
+EndTable
+
+Table: Examples
+Type: Lookup
+Roll: 1d100
+1: Aftershave/perfume
+2: Almonds
+3: Bad eggs
+4: Beeswax
+5: Bitter
+6: Blood
+7: Burning dust
+8: Burnt hair
+9: Burnt toast
+10: Campfire smoke
+11: Cedar
+12: Chicken coop
+13: Chlorine
+14: Citronella
+15: Citrus
+16: Clean baby's hair
+17: Clean ocean
+18: Cleaning fluid
+19: Cold early morning
+20: Cooked bread
+21: Curry
+22: Dark pine forest
+23: Dirty bed sheets
+24: Dry crypt
+25: Elven perfume
+26: Eucalyptus
+27: Feet
+28: Ferret nest
+29: Fish
+30: Fog
+31: Fresh apples
+32: Fresh bread
+33: Fresh milk
+34: Fresh oil paint
+35: Fresh sweat
+36: Fresh-baked bread
+37: Fresh-baked pie
+38: Fresh-cut grass
+39: Freshly scraped metal
+40: Freshly-dug earth
+41: Frying bacon
+42: Garlic
+43: Glue
+44: Good wine
+45: Grass
+46: Hay in the sun
+47: Horse manure
+48: Incense
+49: Lavender
+50: Lemon
+EndTable
+
+Table: Light sensitivity - Revulsion
+Type: Lookup
+Roll: 151
+52: Light sensitivity - Burns
+53: Migraines
+54: Mood - amplifier
+55: Mood - Rapid swings
+56: Mood - suppression
+57: Nausea
+58: Necrotic Damage
+59: No Fear
+60: Organ Damage
+61: Organ Failure
+62: Overheating
+63: Overwhelming Sadness
+64: Pain - Amplification
+65: Pain - Induction
+66: Pain - Negation
+67: Pain - Reduction
+68: Paralysis - Body Part
+69: Paralysis - Total
+70: Paranoia
+71: Petrification - Partial/Body Part
+72: Petrification - Total/Body
+73: Reduced Dexterity
+74: Reduced Healing
+75: Self-Doubt
+76: Sleep - Deprivation
+77: Sleep - Increased
+78: Sleep - Knocked out/Hard to wake
+79: Slowed Metabolism
+80: Sneezing
+81: Speed reduced
+82: Strength Reduction
+83: Strong High
+84: Suggestibility
+85: Sunlight sensitivity
+86: Temperature Decrease
+87: Temperature Fluctuations
+88: Temperature Increase
+89: Temporary Amnesia
+90: Thirst - Decreased
+91: Thirst - Increased
+92: Tinnitus
+93: Tremors - Arms
+94: Tremors - Hands
+95: Tremors - Legs
+96: Vertigo
+97: Vomiting
+98: Vulnerable to certain damage
+99: Weakened will
+100: Will tell truth (as they know it)
+EndTable
+
+Table: Examples (Roll 1d4 times)
+Type: Lookup
+Roll: 1d100
+1: Accelerated Metabolism
+2: Addiction to (ingredient)
+3: Addiction to the cure
+4: Addiction to the poison
+5: Allergic reaction to something
+6: Amnesia
+7: Amplification - Sounds
+8: Amplification - Touch
+9: Blindness
+10: Bloating
+11: Blood Loss
+12: Body Tremors
+13: Breathing Issues
+14: Cannot keep warm
+15: Cannot speak
+16: Can’t cast spells
+17: Can’t read
+18: Can’t understand speech
+19: Deafness
+20: Dehydration
+21: Delirium
+22: Delusions
+23: Diarrhoea
+24: Emotion Amplification
+25: Emotion Suppression
+26: Excessive Consumption
+27: Excessive Saliva
+28: Fake/Feign Death
+29: Fear
+30: Feel no pain
+31: Feeling of being drowned
+32: Flatuance/Passing Gas
+33: Hallucination - Sight
+34: Hallucination - Sound
+35: Hallucination - Touch
+36: Headaches
+37: Hiccoughs
+38: Hyper Fertility
+39: Infertility
+40: Inhibitions Removed
+41: Intellect Reduction
+42: Internal Burning
+43: Intoxication
+44: Itchy Skin
+45: Joint Locking
+46: Joint Pain
+47: Lack of appetite
+48: Language Loss
+49: Libido increase
+50: Libido suppression
+EndTable
+
