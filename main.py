@@ -94,7 +94,7 @@ def tbl_to_ipt(table, file):
 
 def main():
 
-    pdf_path = "./dev_resources/source.pdf" #user_file_selection() <---------------------------------- CHANGED FOR TESTING
+    pdf_path = user_file_selection()
     print(f"Running against pdf: {pdf_path}...")
 
     while True:
@@ -105,7 +105,7 @@ def main():
         if tables.n == 0:
             print(f"{tables.n} tables found. Returning to page select.")
         else:    
-            print(f"{tables.n} tables found") ## reprompt for new page range if nil
+            print(f"{tables.n} tables found")
             print(f"Example of first table:") 
             print(tables[0].df)
             break
